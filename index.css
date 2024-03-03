@@ -1,0 +1,127 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7a5d9b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  #diary {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow:  10px 10px 15px rgb(139, 89, 162), -10px -10px 15px #74379f;
+    /* Added a subtle drop shadow */
+    padding: 30;
+  
+    border-radius: 15px;
+    transition: box-shadow 0.3s;
+  
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    /* Increased font weight for emphasis */
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  #entries {
+    margin-top: 30px;
+  }
+
+  #entryContent{
+    font-size: 2rem;
+
+  }
+
+  .cnt{
+    font-size: 2rem;
+  }
+
+ 
+  
+  .entry {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fafafa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .entry:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Increased shadow opacity on hover */
+  }
+  
+  .entry p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .entry-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .entry:hover .entry-actions {
+    opacity: 1;
+  }
+  
+  .entry-actions button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .entry-actions button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #entryForm {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+    display: none;
+    transition: transform 0.3s;
+  }

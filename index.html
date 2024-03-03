@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diary App</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div id="diary">
+    <h1>My Diary</h1>
+    <div>
+      <button onclick="openEntryForm()">Add Entry</button>
+      
+    </div>
+    <div id="entries"></div>
+  </div>
+
+  <div id="entryForm" style="display: none;">
+    <h2 id="formTitle">Add New Entry</h2>
+    <form onsubmit="saveEntry(event)">
+      <label for="entryDate">Date:</label>
+      <input type="date" id="entryDate" required><br>
+
+      <label class="cnt" for="entryContent">Content:</label>
+      <textarea id="entryContent" required></textarea><br>
+
+      <button type="submit">Save</button>
+      <button type="button" onclick="closeEntryForm()">Cancel</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
